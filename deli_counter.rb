@@ -16,7 +16,7 @@ def line(katz_deli)
   end
 end
 
-$number = 0
+$number = 1
 def take_a_number()
   puts "order number..#{$number}"
   $number += 1# the ticket welcomes the added person by their name and gives the position in line.
