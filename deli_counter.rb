@@ -7,19 +7,25 @@ def line(katz_deli)
     puts "The line is currently empty."#print the phrase
   else
     !katz_deli.empty?# If the line is not empty. this line is not required in the code but helps me understand it easier
-    counter = 1# there is now 1 person in line
-    katz_deli.each do |customer|
+    counter = 1# there is now 1 person in line..
+    katz_deli.each do |customer|#using the each iterator to tell the system to run the code for  ech element of the array.
       current_position << "#{counter}. #{customer}"# to display the current position of the elements of the array
-      counter += 1
+      counter += 1# incrementing
     end
     puts "The line is currently: #{current_position.join(" ")}"# display the current position in a linear way.
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli << name
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."# the ticket welcomes the added person by their name and gives the position in line.
+$number = 1
+def take_a_number()
+  puts "order number..#{$number}"
+  $number += 1# the ticket welcomes the added person by their name and gives the position in line.
 end
+
+puts take_a_number
+puts take_a_number
+puts take_a_number
+
 
 def now_serving(katz_deli)
   if katz_deli.empty?
